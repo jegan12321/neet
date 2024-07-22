@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+<body>
+    <!-- Header with Logo and Company Name -->
+    <div style="text-align: center; margin-bottom: 20px;">
+        <img src="logo.png" alt="Company Logo" style="width: 100px;">
+        <h1>Aima Crafting Wing</h1>
+    </div>
+
+    <!-- Registration Form -->
+    <form action="submit_form.php" method="post" style="width: 300px; margin: 0 auto; border: 1px solid #ccc; padding: 20px; border-radius: 5px;">
+        <!-- Name Field -->
+        <div>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        <!-- DOB Field -->
+        <div>
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required>
+        </div>
+        <!-- Gender Field -->
+        <div>
+            <label>Gender:</label><br>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label><br>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label><br>
+            <input type="radio" id="other" name="gender" value="other">
+            <label for="other">Other</label>
+        </div>
+        <!-- Address Field -->
+        <div>
+            <label for="address">Address:</label><br>
+            <textarea id="address" name="address" rows="4" cols="30" required></textarea>
+        </div>
+        <!-- Qualification Field -->
+        <div>
+            <label for="qualification">Qualification:</label>
+            <select id="qualification" name="qualification" required>
+                <option value="highschool">High School</option>
+                <option value="bachelor">Bachelor's Degree</option>
+                <option value="master">Master's Degree</option>
+                <option value="phd">Ph.D.</option>
+            </select>
+        </div>
+        <!-- Hobby Field -->
+        <div>
+            <label>Hobbies:</label><br>
+            <input type="checkbox" id="reading" name="hobby" value="reading">
+            <label for="reading">Reading</label><br>
+            <input type="checkbox" id="traveling" name="hobby" value="traveling">
+            <label for="traveling">Traveling</label><br>
+            <input type="checkbox" id="sports" name="hobby" value="sports">
+            <label for="sports">Sports</label><br>
+            <input type="checkbox" id="music" name="hobby" value="music">
+            <label for="music">Music</label>
+        </div>
+        <!-- Submit Button -->
+        <div>
+            <button type="submit">Submit</button>
+        </div>
+    </form>
+</body>
+</html>
